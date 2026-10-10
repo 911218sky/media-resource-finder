@@ -1,0 +1,17 @@
+{
+  "user_query": "Iron Man 3",
+  "aliases": ["鋼鐵人3", "IronMan 3"],
+  "official_title": "Iron Man 3 (2013)",
+  "search_queries": [
+    "Iron Man 3 2013",
+    "Iron Man 3 1080p",
+    "Iron Man 3 BluRay"
+  ],
+  "commands": {
+    "find": "uv run mrf find \"Iron Man 3\"",
+    "find_alias": "uv run mrf find \"鋼鐵人3\"",
+    "download": "uv run mrf download <40-char-hash>",
+    "verify": "uv run mrf verify ./downloads --recursive"
+  },
+  "legal_note": "Prefer Disney+ / digital purchase when available."
+}

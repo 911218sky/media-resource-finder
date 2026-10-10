@@ -1,0 +1,31 @@
+[project]
+name = "mrf"
+version = "0.1.0"
+description = "Cross-platform media finder: BTDig search, scam inspect, aria2 download, verify"
+readme = "README.md"
+authors = [
+    { name = "Chiu Chun-Hsien", email = "95356121+911218sky@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.28.1",
+    "psutil>=7.2.2",
+    "rich>=15.0.0",
+    "typer>=0.27.3",
+]
+
+[project.scripts]
+mrf = "mrf:main"
+
+[build-system]
+requires = ["uv_build>=0.9.22,<0.10.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

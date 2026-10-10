@@ -1,0 +1,27 @@
+# Runtime output — never commit
+downloads/*
+!downloads/.gitkeep
+torrents/*
+!torrents/.gitkeep
+last-find.json
+*.log
+
+# aria2 session files
+*.aria2
+
+# Python / uv
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+dist/
+build/
+
+# Windows / editor
+Thumbs.db
+Desktop.ini
+.DS_Store
+.vscode/

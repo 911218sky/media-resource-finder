@@ -1,0 +1,15 @@
+---
+description: Seeder probes must never leave hung aria2c or TEMP junk
+alwaysApply: true
+---
+
+# Probe cleanup (mandatory)
+
+When running `mrf find` / `mrf test-hash` / hash checks:
+
+- Prefer `uv run mrf test-hash` / find's built-in probe (hard-kills aria2c, deletes temp `mrf-test`).
+- After any hash probe: confirm no leftover `aria2c` with `mrf-test` in the command line; kill if present.
+- Delete scam/junk `.torrent` caches the user rejected (under `torrents/`).
+- find / download must inspect before probe/download; never download `Verdict=scam`.
+- Never treat a seeder probe as a real download — real downloads only via `uv run mrf download` into `downloads/`.
+- If the user reports "something is downloading" after a find/test, check/kill probe `aria2c` first.

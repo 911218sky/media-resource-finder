@@ -1,0 +1,23 @@
+{
+  "user_query": "Avatar 3",
+  "official_title": "Avatar: Fire and Ash (2025)",
+  "search_queries": [
+    "Avatar Fire and Ash 2025",
+    "Avatar Fire and Ash 1080p",
+    "Avatar 3 1080p"
+  ],
+  "example_hashes": [
+    {
+      "hash": "8f601df84335c484486aa1af93b4b63fb846971d",
+      "label": "2160p WEB H265-ETHEL (~29 GB)",
+      "note": "Found via WebSearch; magnet metadata works; verify seeders with mrf test-hash"
+    }
+  ],
+  "commands": {
+    "find": "uv run mrf find \"Avatar 3\"",
+    "find_with_hash": "uv run mrf find \"Avatar 3\" --hash 8f601df84335c484486aa1af93b4b63fb846971d",
+    "test": "uv run mrf test-hash 8f601df84335c484486aa1af93b4b63fb846971d",
+    "download": "uv run mrf download 8f601df84335c484486aa1af93b4b63fb846971d"
+  },
+  "legal_note": "Prefer Disney+ / digital purchase when available."
+}

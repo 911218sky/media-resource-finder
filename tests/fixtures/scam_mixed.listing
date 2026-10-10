@@ -1,0 +1,13 @@
+Info Hash: 5e3420e20e2ae55fd13e9a2f5caef7d9cb8e7ecb
+Name: mixed malware pack
+Total Length: 1.0GiB (1,073,741,824)
+Mode: multi
+Announce:
+  http://tracker.example/announce
+
+   idx|path/length
+======+===========================================================================
+    1|./spam/fake.chm
+       12.0KiB (12,288)
+    2|./video/clip.mp4
+       1024.0MiB (1,073,741,824)
